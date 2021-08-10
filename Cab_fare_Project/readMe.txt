@@ -1,5 +1,5 @@
 1) code files folder
---contains notebook file name Cab_fare_prediction_final1.ipynb having all the visualization and model codes
+--contains notebook file name Cab_fare_prediction_final2.ipynb having all the visualization and model codes
 
 --contains .py file name cab_fare_prediction_deployment.py having Random Forest model selection this file will execute indepently by configuring the input paths for train and test data.
 in this file will not execute plots and other models 
@@ -29,5 +29,9 @@ I would like to request to evaluate on basis of python as I confirmed from Edwis
 --Contains the project report and details which we worked on Cab Fare prediction regression problem having conclusions and deployement steps 
 
 ===============================================================================================
+
+4) Input file folder
+
+--contains test and train data files with problem statement document
 
 Note: .pkl file cannot be uploaded as its size greater than allowed for submission
