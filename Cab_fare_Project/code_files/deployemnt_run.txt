@@ -1,0 +1,248 @@
+CMD output  Trace
+-----------------
+
+-----------------------
+Data Exploration Starts
+-----------------------
+Shape of training dataset :  (16067, 7)
+Shape of test dataset :  (9914, 6)
+shape of Train dataset (16062, 7)
+shape of Train dataset (15984, 7)
+pickup_Longitude above 180 is 0
+pickup_Longitude below -180 is 0
+pickup_Latitude above 90 is 1
+pickup_Latitude below -90 is 0
+dropoff_Longitude above 180 is 0
+dropoff_Longitude below -180 is 0
+dropoff_Latitude above 90 is 0
+dropoff_Latitude below -90 is 0
+-74.438233       40.766125
+-74.006893       401.083332
+-74.42933199999999       40.802437
+-74.006377       41.366138
+shape of Train dataset (15983, 7)
+shape of Train dataset (15661, 7)
+----------------------------------------------------
+Missing Value Exploration & Outlier Treatment Starts
+----------------------------------------------------
+Null Data        fare_amount     pickup_datetime  pickup_longitude  ...  dropoff_longitude  dropoff_latitude  passenger_count
+8              NaN 2012-12-03 13:10:00        -74.006462  ...         -73.993078         40.731628              1.0
+31           22.54 2015-06-21 21:46:34        -74.010483  ...         -73.985771         40.660366              NaN
+64            7.30 2011-11-07 10:47:40        -74.003919  ...         -73.992368         40.735362              NaN
+69             NaN 2015-05-12 23:51:42        -73.954796  ...         -73.944931         40.780087              1.0
+82            8.50 2013-06-14 08:27:43        -73.953710  ...         -73.957015         40.777676              NaN
+...            ...                 ...               ...  ...                ...               ...              ...
+8178           NaN 2015-03-10 06:19:43        -73.979927  ...         -74.011360         40.713360              1.0
+8226           NaN 2011-08-13 01:33:02        -74.007081  ...         -73.835494         40.703821              4.0
+8259         57.54 2015-05-03 16:49:52        -73.781990  ...         -73.965096         40.803551              NaN
+8306          6.90 2010-12-12 11:43:16        -73.983912  ...         -73.979796         40.765198              NaN
+16066         8.50 2011-12-14 06:24:33        -74.002111  ...         -73.983877         40.761975              NaN
+
+[78 rows x 7 columns]
+0
+shape of Train dataset (15660, 7)
+Imputing row 1/15660 with 0 missing, elapsed time: 36.292
+Imputing row 101/15660 with 0 missing, elapsed time: 36.325
+Imputing row 201/15660 with 0 missing, elapsed time: 36.327
+Imputing row 301/15660 with 0 missing, elapsed time: 36.329
+Imputing row 401/15660 with 0 missing, elapsed time: 36.334
+Imputing row 501/15660 with 0 missing, elapsed time: 36.337
+Imputing row 601/15660 with 0 missing, elapsed time: 36.340
+Imputing row 701/15660 with 0 missing, elapsed time: 36.344
+Imputing row 801/15660 with 0 missing, elapsed time: 36.347
+Imputing row 901/15660 with 0 missing, elapsed time: 36.351
+Imputing row 1001/15660 with 0 missing, elapsed time: 36.354
+Imputing row 1101/15660 with 0 missing, elapsed time: 36.356
+Imputing row 1201/15660 with 0 missing, elapsed time: 36.360
+Imputing row 1301/15660 with 0 missing, elapsed time: 36.361
+Imputing row 1401/15660 with 0 missing, elapsed time: 36.370
+Imputing row 1501/15660 with 0 missing, elapsed time: 36.371
+Imputing row 1601/15660 with 0 missing, elapsed time: 36.373
+Imputing row 1701/15660 with 0 missing, elapsed time: 36.375
+Imputing row 1801/15660 with 0 missing, elapsed time: 36.381
+Imputing row 1901/15660 with 0 missing, elapsed time: 36.382
+Imputing row 2001/15660 with 0 missing, elapsed time: 36.384
+Imputing row 2101/15660 with 0 missing, elapsed time: 36.386
+Imputing row 2201/15660 with 0 missing, elapsed time: 36.387
+Imputing row 2301/15660 with 0 missing, elapsed time: 36.390
+Imputing row 2401/15660 with 0 missing, elapsed time: 36.396
+Imputing row 2501/15660 with 0 missing, elapsed time: 36.396
+Imputing row 2601/15660 with 0 missing, elapsed time: 36.397
+Imputing row 2701/15660 with 0 missing, elapsed time: 36.398
+Imputing row 2801/15660 with 0 missing, elapsed time: 36.402
+Imputing row 2901/15660 with 0 missing, elapsed time: 36.403
+Imputing row 3001/15660 with 0 missing, elapsed time: 36.405
+Imputing row 3101/15660 with 0 missing, elapsed time: 36.411
+Imputing row 3201/15660 with 0 missing, elapsed time: 36.412
+Imputing row 3301/15660 with 0 missing, elapsed time: 36.412
+Imputing row 3401/15660 with 0 missing, elapsed time: 36.413
+Imputing row 3501/15660 with 0 missing, elapsed time: 36.414
+Imputing row 3601/15660 with 0 missing, elapsed time: 36.416
+Imputing row 3701/15660 with 0 missing, elapsed time: 36.419
+Imputing row 3801/15660 with 0 missing, elapsed time: 36.427
+Imputing row 3901/15660 with 0 missing, elapsed time: 36.428
+Imputing row 4001/15660 with 0 missing, elapsed time: 36.429
+Imputing row 4101/15660 with 0 missing, elapsed time: 36.430
+Imputing row 4201/15660 with 0 missing, elapsed time: 36.432
+Imputing row 4301/15660 with 0 missing, elapsed time: 36.433
+Imputing row 4401/15660 with 0 missing, elapsed time: 36.435
+Imputing row 4501/15660 with 0 missing, elapsed time: 36.442
+Imputing row 4601/15660 with 0 missing, elapsed time: 36.443
+Imputing row 4701/15660 with 0 missing, elapsed time: 36.444
+Imputing row 4801/15660 with 0 missing, elapsed time: 36.445
+Imputing row 4901/15660 with 0 missing, elapsed time: 36.446
+Imputing row 5001/15660 with 0 missing, elapsed time: 36.447
+Imputing row 5101/15660 with 0 missing, elapsed time: 36.448
+Imputing row 5201/15660 with 0 missing, elapsed time: 36.451
+Imputing row 5301/15660 with 0 missing, elapsed time: 36.460
+Imputing row 5401/15660 with 0 missing, elapsed time: 36.461
+Imputing row 5501/15660 with 0 missing, elapsed time: 36.461
+Imputing row 5601/15660 with 0 missing, elapsed time: 36.462
+Imputing row 5701/15660 with 0 missing, elapsed time: 36.464
+Imputing row 5801/15660 with 0 missing, elapsed time: 36.465
+Imputing row 5901/15660 with 0 missing, elapsed time: 36.469
+Imputing row 6001/15660 with 0 missing, elapsed time: 36.476
+Imputing row 6101/15660 with 0 missing, elapsed time: 36.476
+Imputing row 6201/15660 with 0 missing, elapsed time: 36.477
+Imputing row 6301/15660 with 0 missing, elapsed time: 36.478
+Imputing row 6401/15660 with 0 missing, elapsed time: 36.479
+Imputing row 6501/15660 with 0 missing, elapsed time: 36.480
+Imputing row 6601/15660 with 0 missing, elapsed time: 36.481
+Imputing row 6701/15660 with 0 missing, elapsed time: 36.486
+Imputing row 6801/15660 with 0 missing, elapsed time: 36.493
+Imputing row 6901/15660 with 0 missing, elapsed time: 36.493
+Imputing row 7001/15660 with 0 missing, elapsed time: 36.494
+Imputing row 7101/15660 with 0 missing, elapsed time: 36.495
+Imputing row 7201/15660 with 0 missing, elapsed time: 36.497
+Imputing row 7301/15660 with 0 missing, elapsed time: 36.502
+Imputing row 7401/15660 with 0 missing, elapsed time: 36.507
+Imputing row 7501/15660 with 0 missing, elapsed time: 36.508
+Imputing row 7601/15660 with 0 missing, elapsed time: 36.509
+Imputing row 7701/15660 with 0 missing, elapsed time: 36.510
+Imputing row 7801/15660 with 0 missing, elapsed time: 36.511
+Imputing row 7901/15660 with 0 missing, elapsed time: 36.512
+Imputing row 8001/15660 with 0 missing, elapsed time: 36.521
+Imputing row 8101/15660 with 0 missing, elapsed time: 36.522
+Imputing row 8201/15660 with 0 missing, elapsed time: 36.524
+Imputing row 8301/15660 with 0 missing, elapsed time: 36.524
+Imputing row 8401/15660 with 0 missing, elapsed time: 36.525
+Imputing row 8501/15660 with 0 missing, elapsed time: 36.526
+Imputing row 8601/15660 with 0 missing, elapsed time: 36.528
+Imputing row 8701/15660 with 0 missing, elapsed time: 36.536
+Imputing row 8801/15660 with 0 missing, elapsed time: 36.538
+Imputing row 8901/15660 with 0 missing, elapsed time: 36.539
+Imputing row 9001/15660 with 0 missing, elapsed time: 36.540
+Imputing row 9101/15660 with 0 missing, elapsed time: 36.540
+Imputing row 9201/15660 with 0 missing, elapsed time: 36.541
+Imputing row 9301/15660 with 0 missing, elapsed time: 36.542
+Imputing row 9401/15660 with 0 missing, elapsed time: 36.543
+Imputing row 9501/15660 with 0 missing, elapsed time: 36.544
+Imputing row 9601/15660 with 0 missing, elapsed time: 36.553
+Imputing row 9701/15660 with 0 missing, elapsed time: 36.554
+Imputing row 9801/15660 with 0 missing, elapsed time: 36.555
+Imputing row 9901/15660 with 0 missing, elapsed time: 36.556
+Imputing row 10001/15660 with 0 missing, elapsed time: 36.557
+Imputing row 10101/15660 with 0 missing, elapsed time: 36.558
+Imputing row 10201/15660 with 0 missing, elapsed time: 36.559
+Imputing row 10301/15660 with 0 missing, elapsed time: 36.560
+Imputing row 10401/15660 with 0 missing, elapsed time: 36.560
+Imputing row 10501/15660 with 0 missing, elapsed time: 36.561
+Imputing row 10601/15660 with 0 missing, elapsed time: 36.562
+Imputing row 10701/15660 with 0 missing, elapsed time: 36.563
+Imputing row 10801/15660 with 0 missing, elapsed time: 36.566
+Imputing row 10901/15660 with 0 missing, elapsed time: 36.567
+Imputing row 11001/15660 with 0 missing, elapsed time: 36.567
+Imputing row 11101/15660 with 0 missing, elapsed time: 36.568
+Imputing row 11201/15660 with 0 missing, elapsed time: 36.569
+Imputing row 11301/15660 with 0 missing, elapsed time: 36.570
+Imputing row 11401/15660 with 0 missing, elapsed time: 36.571
+Imputing row 11501/15660 with 0 missing, elapsed time: 36.572
+Imputing row 11601/15660 with 0 missing, elapsed time: 36.572
+Imputing row 11701/15660 with 0 missing, elapsed time: 36.573
+Imputing row 11801/15660 with 0 missing, elapsed time: 36.574
+Imputing row 11901/15660 with 0 missing, elapsed time: 36.581
+Imputing row 12001/15660 with 0 missing, elapsed time: 36.588
+Imputing row 12101/15660 with 0 missing, elapsed time: 36.588
+Imputing row 12201/15660 with 0 missing, elapsed time: 36.589
+Imputing row 12301/15660 with 0 missing, elapsed time: 36.590
+Imputing row 12401/15660 with 0 missing, elapsed time: 36.593
+Imputing row 12501/15660 with 0 missing, elapsed time: 36.594
+Imputing row 12601/15660 with 0 missing, elapsed time: 36.603
+Imputing row 12701/15660 with 0 missing, elapsed time: 36.604
+Imputing row 12801/15660 with 0 missing, elapsed time: 36.605
+Imputing row 12901/15660 with 0 missing, elapsed time: 36.605
+Imputing row 13001/15660 with 0 missing, elapsed time: 36.606
+Imputing row 13101/15660 with 0 missing, elapsed time: 36.609
+Imputing row 13201/15660 with 0 missing, elapsed time: 36.615
+Imputing row 13301/15660 with 0 missing, elapsed time: 36.617
+Imputing row 13401/15660 with 0 missing, elapsed time: 36.618
+Imputing row 13501/15660 with 0 missing, elapsed time: 36.619
+Imputing row 13601/15660 with 0 missing, elapsed time: 36.620
+Imputing row 13701/15660 with 0 missing, elapsed time: 36.621
+Imputing row 13801/15660 with 0 missing, elapsed time: 36.622
+Imputing row 13901/15660 with 0 missing, elapsed time: 36.625
+Imputing row 14001/15660 with 0 missing, elapsed time: 36.631
+Imputing row 14101/15660 with 0 missing, elapsed time: 36.633
+Imputing row 14201/15660 with 0 missing, elapsed time: 36.634
+Imputing row 14301/15660 with 0 missing, elapsed time: 36.635
+Imputing row 14401/15660 with 0 missing, elapsed time: 36.635
+Imputing row 14501/15660 with 0 missing, elapsed time: 36.636
+Imputing row 14601/15660 with 0 missing, elapsed time: 36.637
+Imputing row 14701/15660 with 0 missing, elapsed time: 36.638
+Imputing row 14801/15660 with 0 missing, elapsed time: 36.642
+Imputing row 14901/15660 with 0 missing, elapsed time: 36.647
+Imputing row 15001/15660 with 0 missing, elapsed time: 36.648
+Imputing row 15101/15660 with 0 missing, elapsed time: 36.650
+Imputing row 15201/15660 with 0 missing, elapsed time: 36.651
+Imputing row 15301/15660 with 0 missing, elapsed time: 36.652
+Imputing row 15401/15660 with 0 missing, elapsed time: 36.653
+Imputing row 15501/15660 with 0 missing, elapsed time: 36.654
+Imputing row 15601/15660 with 0 missing, elapsed time: 36.657
+shape of Train dataset (15658, 6)
+--------------------------
+Feature Engineering Starts
+--------------------------
+shape of Train dataset (15658, 7)
+shape of Test dataset (9914, 12)
+shape of Train dataset (15658, 14)
+shape of Test dataset (9914, 13)
+shape of Train dataset (15501, 14)
+Final Data for model    fare_amount  passenger_count  year  month  date  day  hour  minute  distance
+0     1.704748                1  2009      6    15    0    17      26  0.708412
+1     2.884801                1  2010      1     5    1    16      52  2.246029
+2     1.902108                2  2011      8    18    3     0      35  0.871095
+3     2.163323                1  2012      4    21    5     4      30  1.334809
+4     1.840550                1  2010      3     9    1     7      51  1.098331
+---------------------
+Model Building Starts
+---------------------
+x_train  (11625, 8)
+x_test (3876, 8)
+Tuned Random Forest Parameters: {'n_estimators': 300, 'min_samples_split': 3, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': 19, 'bootstrap': False}
+Best score is 0.7972018096153176
+[0.0040173  0.02775978 0.01335515 0.01526056 0.01084596 0.02079573
+ 0.01716386 0.89080166]
+<<<------------------- Training Data Score --------------------->>>
+
+r2 square   0.9180809329967141
+Adjusted r square:0.9180245149064915
+MAPE:4.431985539916758
+MSE: 0.024240559480427002
+RMSE: 0.15569380039175293
+
+<<<------------------- Test Data Score --------------------->>>
+
+r2 square   0.8142391666215187
+Adjusted r square:0.8138548669920831
+MAPE:7.346077934610977
+MSE: 0.05593458956386321
+RMSE: 0.23650494617209006
+------------------------------
+Prediction on Test Data Starts
+------------------------------
+   passenger_count  year  month  date  day  hour  minute  distance  predicted_fare
+0                1  2015      1    27    1    13       8  1.200946        2.357778
+1                1  2015      1    27    1    13       8  1.231205        2.419631
+2                1  2011     10     8    5    11      53  0.481579        1.708910
+3                1  2012     12     1    5    21      12  1.085538        2.239362
+4                1  2012     12     1    5    21      12  1.854312        2.858122
